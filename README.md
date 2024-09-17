@@ -16,8 +16,8 @@ Welcome to **NextPress**, a robust starter template designed to get you up and r
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/your-repo-url/nextpress-starter.git
-cd nextpress-starter
+git clone https://github.com/HasaanAhmad/NextPress-Starter
+cd NextPress-Starter
 ```
 
 ### Step 2: Install Dependencies
@@ -34,14 +34,19 @@ Create your `.env` files based on the `.env.example` provided in the repository.
 
 ```bash
 # DATABASE
-DATABASE_URL='postgresql://postgres:postgres@localhost:5432/exampleDB'
+DATABASE_URL='YOUR DATABASE URL'
 
 # AUTHJS
-AUTH_GOOGLE_ID=
-AUTH_GOOGLE_SECRET=
+AUTH_GOOGLE_ID='GOOGLE CLIENT ID FROM GCP CONSOLE'
+AUTH_GOOGLE_SECRET='GOOGLE SECRET ID'
 AUTH_SECRET=""
 
 # Add more providers if necessary
+```
+
+### STEP 3.1(Optional): Push to DB
+```bash
+npx prisma db push
 ```
 
 ### Step 4: Migrate the Database
@@ -55,6 +60,8 @@ npx prisma migrate dev
 ```bash
 npx prisma generate
 ```
+
+
 
 ### Step 6: Run the Development Server
 
@@ -81,10 +88,11 @@ Now, navigate to `http://localhost:3000` to see the app live.
 - 📊 **Database Ready**: PostgreSQL with Prisma for smooth migrations and database operations.
 - 💅 **Customizable UI**: Use ShadCN to quickly style your components.
 - 🧩 **Modular Codebase**: Clean and structured project for scalability and maintainability.
+- 🚀 **Enhanced Folder Structure**: Folder structure with Modern Practises for Server Actions, Hooks, Providers etc.
 
 ## 🎨 Live Demo
 
-Check out the live version of **NextPress** hosted at [NextPress.com](https://nextpress.com).
+Check out the live version of **NextPress** hosted at [NextPress-Starter]().
 
 ## ❤️ Made with Love
 
