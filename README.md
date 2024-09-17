@@ -1,7 +1,7 @@
 # 🚀 Next.js 14 Starter Kit with Auth.js, PostgreSQL, Prisma, ShadCN, and TypeScript
 
 Welcome to **NextPress**, a robust starter template designed to get you up and running quickly with the latest stack, including **Next.js 14**, **Auth.js**, **PostgreSQL**, **Prisma**, **ShadCN**, and **TypeScript**. Whether you're starting a new project or looking to streamline your development process, **NextPress** has you covered with the best practices and tools. 
-Note: Uncomment the Adapter for Database to use it. (server/auth.ts)
+Note: Uncomment the Adapter for Database to use it ✨. (server/auth.ts) and Also Remove Eslint Rules from .eslintrc.json. I added those because typescript wont allow me to do unused imports (Those are for snippet codes provided in auth.ts for you ease 🥹)
 
 ## 📦 What's Inside?
 
@@ -93,7 +93,7 @@ Now, navigate to `http://localhost:3000` to see the app live.
 
 ## 🎨 Live Demo
 
-Check out the live version of **NextPress** hosted at [NextPress-Starter]().
+Check out the live version of **NextPress** hosted at [NextPress-Starter](https://nextpress-starter.vercel.app).
 
 ## ❤️ Made with Love
 
