@@ -10,7 +10,7 @@ export default function LandingPage() {
         <nav className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">NextJS Starter</h1>
           <Link
-            href="https://github.com/yourusername/your-repo"
+            href="https://github.com/HasaanAhmad/NextJS-AuthJS-Postgres-Prisma-ShadCN-Starter-Template"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +34,8 @@ export default function LandingPage() {
           </p>
           <div className="gap-2 flex items-center justify-center">
 
-
+        <Link href="https://github.com/HasaanAhmad/NextJS-AuthJS-Postgres-Prisma-ShadCN-Starter-Template" target="_blank"
+            rel="noopener noreferrer">
           <Button
             size="lg"
             variant={"outline"}
@@ -42,6 +43,7 @@ export default function LandingPage() {
           >
             Get Started
           </Button>
+          </Link>
           <Link href="/session">
           <Button
             size="lg"
@@ -94,21 +96,32 @@ export default function LandingPage() {
           <p className="text-xl mb-8 text-gray-300">
             Clone now and start building your next big project!
           </p>
+          <Link href="https://github.com/HasaanAhmad/NextJS-AuthJS-Postgres-Prisma-ShadCN-Starter-Template"
+          target="_blank"
+            rel="noopener noreferrer"
+            >
           <Button
             size="lg"
             variant={"secondary"}
             className=" text-black font-bold transition-colors duration-300"
-          >
+            >
             Clone Repository
           </Button>
+            </Link>
         </section>
       </main>
 
       <footer className="bg-gray-800 py-8 mt-16">
-        <div className="container mx-auto text-center text-gray-300">
+        <div className="flex items-center justify-center text-gray-300 gap-4">
           <p>
             &copy; {new Date().getFullYear()} Build with ❤️ by Hasaan Ahmad.
           </p>
+
+
+          <Link href="https://github.com/HasaanAhmad">
+        <Github className="" />
+          </Link>
+
         </div>
       </footer>
     </div>
