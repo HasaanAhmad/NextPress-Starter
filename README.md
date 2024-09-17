@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Next.js 14 Starter Kit with Auth.js, PostgreSQL, Prisma, ShadCN, and TypeScript
 
-## Getting Started
+Welcome to **NextPress**, a robust starter template designed to get you up and running quickly with the latest stack, including **Next.js 14**, **Auth.js**, **PostgreSQL**, **Prisma**, **ShadCN**, and **TypeScript**. Whether you're starting a new project or looking to streamline your development process, **NextPress** has you covered with the best practices and tools.
 
-First, run the development server:
+## 📦 What's Inside?
+
+- **Next.js 14** – The latest version of the React framework with improved features and performance.
+- **Auth.js** – Flexible authentication with multiple providers like Google, GitHub, and more.
+- **PostgreSQL** – A powerful and open-source database.
+- **Prisma** – Next-generation ORM for seamless database interaction.
+- **ShadCN** – A styling solution for modern UI components.
+- **TypeScript** – Strongly typed JavaScript for better code quality and developer experience.
+
+## 🚀 Get Started
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/your-repo-url/nextpress-starter.git
+cd nextpress-starter
+```
+
+### Step 2: Install Dependencies
+
+```bash
+npm install
+```
+
+### Step 3: Setup Environment Variables
+
+Create your `.env` files based on the `.env.example` provided in the repository.
+
+**Example:**
+
+```bash
+# DATABASE
+DATABASE_URL='postgresql://postgres:postgres@localhost:5432/exampleDB'
+
+# AUTHJS
+AUTH_GOOGLE_ID=
+AUTH_GOOGLE_SECRET=
+AUTH_SECRET=""
+
+# Add more providers if necessary
+```
+
+### Step 4: Migrate the Database
+
+```bash
+npx prisma migrate dev
+```
+
+### Step 5: Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+### Step 6: Run the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Now, navigate to `http://localhost:3000` to see the app live.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Stack Overview: **NextAuth PrismaPress**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**NextAuth PrismaPress** is your go-to solution for building full-stack applications with:
 
-## Learn More
+- Fast and efficient **Next.js 14** routing and rendering.
+- Scalable **PostgreSQL** database.
+- Secure and customizable authentication using **Auth.js**.
+- Intuitive **Prisma ORM** for database modeling and querying.
+- Beautiful UI styling with **ShadCN** components.
+- Type-safe code with **TypeScript** integration.
 
-To learn more about Next.js, take a look at the following resources:
+## 🌟 Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- 🔒 **Secure Authentication**: Pre-configured with Auth.js for easy setup of Google and other providers.
+- 📊 **Database Ready**: PostgreSQL with Prisma for smooth migrations and database operations.
+- 💅 **Customizable UI**: Use ShadCN to quickly style your components.
+- 🧩 **Modular Codebase**: Clean and structured project for scalability and maintainability.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎨 Live Demo
 
-## Deploy on Vercel
+Check out the live version of **NextPress** hosted at [NextPress.com](https://nextpress.com).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ❤️ Made with Love
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Crafted with ❤️ by **Hasaan Ahmad**.
+
+If you find this template useful, feel free to star the repository, and contribute to make it even better!
+
+## 🤝 Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
