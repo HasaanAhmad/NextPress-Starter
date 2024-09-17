@@ -8,7 +8,7 @@ export default function LandingPage() {
     <div className="min-h-screen bg-gray-900 text-white">
       <header className="container mx-auto py-6">
         <nav className="flex justify-between items-center">
-          <h1 className="text-2xl font-bold">NextJS Starter</h1>
+          <h1 className="text-2xl font-bold">NextPress Starter</h1>
           <Link
             href="https://github.com/HasaanAhmad/NextPress-Starter"
             target="_blank"
