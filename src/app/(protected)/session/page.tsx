@@ -10,7 +10,7 @@ const page = async() => {
     
     if(!session?.user) {
         return( <div className='h-screen flex flex-col justify-center items-center gap-2'>
-        <h1 className='text-4xl font-bold'>YOU ARE NOT SINGED IN</h1>
+        <h1 className='text-4xl font-bold'>YOU ARE NOT SIGNED IN</h1>
         <div className='button-container flex gap-2'>
         <Link href={"/"}>
         <Button variant={"outline"} size={"lg"}>
