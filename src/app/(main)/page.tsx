@@ -10,7 +10,7 @@ export default function LandingPage() {
         <nav className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">NextJS Starter</h1>
           <Link
-            href="https://github.com/HasaanAhmad/NextJS-AuthJS-Postgres-Prisma-ShadCN-Starter-Template"
+            href="https://github.com/HasaanAhmad/NextPress-Starter"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +34,7 @@ export default function LandingPage() {
           </p>
           <div className="gap-2 flex items-center justify-center">
 
-        <Link href="https://github.com/HasaanAhmad/NextJS-AuthJS-Postgres-Prisma-ShadCN-Starter-Template" target="_blank"
+        <Link href="https://github.com/HasaanAhmad/NextPress-Starter" target="_blank"
             rel="noopener noreferrer">
           <Button
             size="lg"
@@ -96,7 +96,7 @@ export default function LandingPage() {
           <p className="text-xl mb-8 text-gray-300">
             Clone now and start building your next big project!
           </p>
-          <Link href="https://github.com/HasaanAhmad/NextJS-AuthJS-Postgres-Prisma-ShadCN-Starter-Template"
+          <Link href="https://github.com/HasaanAhmad/NextPress-Starter"
           target="_blank"
             rel="noopener noreferrer"
             >
