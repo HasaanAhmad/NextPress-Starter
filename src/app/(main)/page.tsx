@@ -2,57 +2,52 @@ import { Button } from "@/components/ui/button";
 import { FeatureCard } from "@/components/FeatureCard";
 import { Github, Database, Lock, Zap, Code, Palette } from "lucide-react";
 import Link from "next/link";
+import { ModeToggle } from "@/components/ThemeToggle";
+import { useTheme } from "next-themes";
 
 export default function LandingPage() {
+
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className={`min-h-screen`}>
       <header className="container mx-auto py-6">
         <nav className="flex justify-between items-center">
           <h1 className="text-2xl font-bold">NextPress Starter</h1>
+          <div className="flex gap-2">
+
+          <ModeToggle />
           <Link
             href="https://github.com/HasaanAhmad/NextPress-Starter"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button
-              variant="outline"
-              className="text-white border-white hover:bg-white hover:text-gray-900 transition-colors duration-300"
-            >
+            <Button variant="default">
               <Github className="mr-2 h-4 w-4" /> GitHub
             </Button>
           </Link>
+          </div>
         </nav>
       </header>
 
-      <main className="container mx-auto px-4 py-16">
+      <main className="container mx-auto py-16">
         <section className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6">
             NextJS AuthJS Postgres Prisma ShadCN Starter
           </h2>
-          <p className="text-xl mb-8 text-gray-300">
+          <p className="text-xl mb-8">
             Get started with a fully configured project in minutes!
           </p>
           <div className="gap-2 flex items-center justify-center">
-
-        <Link href="https://github.com/HasaanAhmad/NextPress-Starter" target="_blank"
-            rel="noopener noreferrer">
-          <Button
-            size="lg"
-            variant={"outline"}
-            className=" text-white transition-colors duration-300"
-          >
-            Get Started
-          </Button>
-          </Link>
-          <Link href="/session">
-          <Button
-            size="lg"
-            variant={"outline"}
-            className=" text-white transition-colors duration-300"
-          >
-            Check Session
-          </Button>
-          </Link>
+           
+            <Link href="https://github.com/HasaanAhmad/NextPress-Starter" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="default">
+                Get Started
+              </Button>
+            </Link>
+            <Link href="/session">
+              <Button size="lg" variant="secondary">
+                Check Session
+              </Button>
+            </Link>
           </div>
         </section>
 
@@ -93,35 +88,29 @@ export default function LandingPage() {
           <h3 className="text-3xl font-bold mb-6">
             Ready to Supercharge Your Development?
           </h3>
-          <p className="text-xl mb-8 text-gray-300">
+          <p className="text-xl mb-8">
             Clone now and start building your next big project!
           </p>
-          <Link href="https://github.com/HasaanAhmad/NextPress-Starter"
-          target="_blank"
+          <Link
+            href="https://github.com/HasaanAhmad/NextPress-Starter"
+            target="_blank"
             rel="noopener noreferrer"
-            >
-          <Button
-            size="lg"
-            variant={"secondary"}
-            className=" text-black font-bold transition-colors duration-300"
-            >
-            Clone Repository
-          </Button>
-            </Link>
+          >
+            <Button size="lg" variant="default">
+              Clone Repository
+            </Button>
+          </Link>
         </section>
       </main>
 
       <footer className="bg-gray-800 py-8 mt-16">
         <div className="flex items-center justify-center text-gray-300 gap-4">
           <p>
-            &copy; {new Date().getFullYear()} Build with ❤️ by Hasaan Ahmad.
+            &copy; {new Date().getFullYear()} Built with ❤️ by Hasaan Ahmad.
           </p>
-
-
           <Link href="https://github.com/HasaanAhmad">
-        <Github className="" />
+            <Github />
           </Link>
-
         </div>
       </footer>
     </div>
